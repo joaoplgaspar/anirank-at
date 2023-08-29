@@ -1,0 +1,22 @@
+@import 'styles/variaveis';
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0;
+    background: $roxo-muito-escuro;
+
+    img {
+        width: 80px;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        color: $branco;
+        font-size: 1.6rem;
+        font-family: $font-secundaria;
+        margin: 0 0 1rem 0;
+    }
+}

@@ -1,0 +1,8 @@
+@import 'styles/variaveis';
+
+.banners {
+    display: flex;
+    overflow: hidden;
+    margin-left: 0%;
+    border-bottom: 10px solid $roxo-escuro;
+}

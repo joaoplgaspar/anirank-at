@@ -1,0 +1,22 @@
+@import 'styles/variaveis';
+
+.row {
+    display: flex;
+    height: 340px;
+    gap: 20px;
+    overflow: hidden;
+    background: $roxo-muito-escuro;
+    padding: 2rem;
+    margin-bottom: 5rem;
+    width: 100%;
+
+    &__empty {
+        color: $branco;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.2rem;
+        font-family: $font-padrao;
+    }
+}

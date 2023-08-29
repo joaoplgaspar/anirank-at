@@ -1,0 +1,96 @@
+@import 'styles/variaveis';
+@import 'styles/breakpoints';
+
+.anime {
+    background-repeat: repeat;
+    background-size: contain;
+    height: 100%;
+    position: relative;
+
+    &__inner {
+
+        &__header {
+            .banner {
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 450px;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    background-color: black;
+                    width: 100%;
+                    height: 450px;
+                    opacity: 0.6;
+                }
+            }
+
+            &__content {
+                display: flex;
+                position: relative;
+                justify-content: center;
+                gap: 20px;
+                padding-inline: 4rem;
+
+                img {
+                    border-radius: 5px;
+                    margin-top: -70px;
+                    width: 250px;
+                    height: fit-content;
+                }
+
+                &__info {
+                    color: $branco;
+                    max-width: 80%;
+
+                    ul {
+                        list-style-type: none;
+                        display: flex;
+                        gap: 10px;
+                        padding: 0;
+                        font-family: $font-terciaria;
+
+                        li {
+                            font-size: 1.4rem;
+                            background: $roxo-claro;
+                            padding: 0.5rem 1rem;
+                            border-radius: 20px;
+                        }
+                    }
+
+                    p {
+                        font-size: 1.6rem;
+                        font-family: $font-secundaria;
+                    }
+                }
+            }   
+        }
+
+        &__info {
+            color: $branco;
+            font-size: 1.8rem;
+            font-family: $font-terciaria;
+
+            ul {
+                list-style-type: none;
+                display: flex;
+                width: 100%;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.4;
+    }
+}

@@ -1,0 +1,56 @@
+@import "styles/variaveis";
+
+.link {
+    color: $branco;
+    font-size: 1.6rem;
+    font-family: $font-terciaria;
+    text-decoration: none;
+    transition: 300ms;
+    text-shadow: 1px 1px $roxo-muito-escuro;
+    position: relative;
+    &:hover {
+        color: yellow;
+
+        .barra {
+            display: block;
+            animation: LoadRight 0.3s ease-out;
+        }
+    }
+
+    .barra {
+        animation: ExitLeft 0.3s ease-out;
+        width: 100%;
+        height: 2px;
+        background: yellow;
+        border-radius: 30px;
+        position: absolute;
+        display: none;
+    }
+}
+
+.linkDestacado {
+    border-bottom: 1px solid yellow;
+}
+
+@keyframes LoadRight {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+        display: block;
+    }
+}
+
+@keyframes ExitLeft {
+    0% {
+        display: block;
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+        display: none;
+    }
+}

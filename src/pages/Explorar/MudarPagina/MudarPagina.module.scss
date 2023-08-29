@@ -1,0 +1,30 @@
+@import 'styles/variaveis';
+
+.pagesContainer {
+    padding: 0 4rem;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        color: $branco;
+        font-size: 2.8rem;
+        font-family: $font-padrao;
+
+        li {
+            background: $roxo-escuro;
+            width: 45px;
+            height: 45px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $roxo;
+            cursor: pointer;
+        }
+
+        .ativado {
+            background: yellow;
+            color: #000;
+        }
+    }
+}

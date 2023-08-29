@@ -1,0 +1,30 @@
+@import 'styles/breakpoints';
+
+.seta {
+    z-index: 3;
+    position: absolute;
+    color: #fff;
+    font-size: 4rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+
+    &__r {
+        right: 1%;
+    }
+
+    &__l {
+        left: 1%;
+    }
+
+    &__disabled {
+        display: none;
+    }
+
+    @media (max-width: $desktop_xsm) {
+        font-size: 3rem;
+    }
+
+    @media (max-width: $mobile) {
+        font-size: 2rem;
+    }
+}

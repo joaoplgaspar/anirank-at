@@ -1,0 +1,19 @@
+@import 'styles/variaveis';
+
+.container {
+    min-height: 100vh;
+    background-repeat: repeat;
+    background-position: center;
+
+    &__head {
+        background: rgba($color: $roxo-muito-escuro, $alpha: 0.2);
+        padding-top: 100px;
+        padding-inline: 8rem;
+    }
+
+    h2 {
+        text-align: center;
+        border-bottom: 1px solid $branco;
+        padding-bottom: 1rem;
+    }
+}
